@@ -5,3 +5,12 @@ package ptr
 func Ptr[T any](v T) *T {
 	return &v
 }
+
+// Value returns the value of a pointer, or the zero value if the pointer is nil.
+func Value[T any](p *T) T {
+	if p == nil {
+		var zeroValue T
+		return zeroValue
+	}
+	return *p
+}
