@@ -2,6 +2,10 @@
 
 Shared Go utilities.
 
+## `maputils`
+
+Package maputils provides utility functions for working with maps.
+
 ## `must`
 
 Package must provides a simple way to unwrap errors.
@@ -9,3 +13,7 @@ Package must provides a simple way to unwrap errors.
 ## `ptr`
 
 Package ptr provides a function to get a pointer to a value.
+
+## `sliceutils`
+
+Package sliceutils provides utility functions for working with slices.
