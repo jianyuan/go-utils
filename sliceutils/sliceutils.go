@@ -9,3 +9,14 @@ func Map[T, R any](f func(T) R, s []T) []R {
 	}
 	return result
 }
+
+// Find returns the first element in the slice that satisfies the predicate f.
+// If no element satisfies the predicate, it returns nil.
+func Find[T any](f func(T) bool, s []T) *T {
+	for _, v := range s {
+		if f(v) {
+			return &v
+		}
+	}
+	return nil
+}
